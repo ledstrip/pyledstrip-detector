@@ -205,7 +205,7 @@ def main(args):
     strip.transmit()
     time.sleep(2.0)
 
-    gray_code = cv2.structured_light.GrayCodePattern_create(strip.led_count, 1).generate()[1]
+    gray_code = cv2.structured_light.GrayCodePattern.create(strip.led_count, 1).generate()[1]
     frames = []
     f = 0.1
 
